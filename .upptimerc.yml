@@ -1,6 +1,13 @@
 owner: qallen028
 repo: nitter-instances
-
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/59 * * * *"
 sites:
   - name: nitter.net
     url: https://nitter.net
