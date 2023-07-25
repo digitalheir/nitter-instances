@@ -10,14 +10,14 @@
 name: Updates CI
 on:
   schedule:
-    - cron: "* * */7 * *"
+    - cron: "30 14 */7 * *"
   repository_dispatch:
     types: [updates]
   workflow_dispatch:
 jobs:
   release:
     name: Deploy updates
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
